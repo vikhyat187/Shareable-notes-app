@@ -14,11 +14,11 @@ import java.util.Set;
 public class TagsDTO {
     private String tagName;
 
-    private Long createdBy;
+    private String createdBy;
 
     private Instant createdAt;
 
-    private Long updatedBy;
+    private String updatedBy;
 
     private Instant updatedAt;
 

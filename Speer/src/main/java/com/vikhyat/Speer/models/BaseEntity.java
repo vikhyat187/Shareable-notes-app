@@ -18,10 +18,10 @@ public class BaseEntity {
     private Instant updatedAt;
 
     @Column(name = "created_by", length = 255)
-    private Long createdBy;
+    private String createdBy;
 
     @Column(name = "updated_by", length = 255)
-    private Long updatedBy;
+    private String updatedBy;
 
     @Column(name = "is_deleted")
     private boolean isDeleted = false;

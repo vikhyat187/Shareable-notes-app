@@ -25,5 +25,7 @@ public class SharedNotesDTO {
         private Instant createdAt;
         private Instant updatedAt;
         private boolean isDeleted;
+        private String createdBy;
+        private String updatedBy;
     }
 }
