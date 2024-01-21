@@ -14,7 +14,7 @@ public class BaseEntity {
     @Column(name = "created_at")
     private Instant createdAt;
 
-    @Column(name = "udpated_at")
+    @Column(name = "updated_at")
     private Instant updatedAt;
 
     @Column(name = "created_by", length = 255)
@@ -26,12 +26,3 @@ public class BaseEntity {
     @Column(name = "is_deleted")
     private boolean isDeleted = false;
 }
-/**
- * TODO left out
- * - Response structure
- * - Exception handling
- * - Spring boot validations
- * - try catch with resources
- * - paginated responses
- * - soft delete filtering in findAll response
- */
