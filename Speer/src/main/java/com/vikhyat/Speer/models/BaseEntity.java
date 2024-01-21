@@ -1,7 +1,6 @@
 package com.vikhyat.Speer.models;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,12 +14,15 @@ public class BaseEntity {
     @Column(name = "created_at")
     private Instant createdAt;
 
-    @Column(name = "udpated_at")
+    @Column(name = "updated_at")
     private Instant updatedAt;
 
-    @Column(name = "created_by")
+    @Column(name = "created_by", length = 255)
     private String createdBy;
 
-    @Column(name = "updated_by")
+    @Column(name = "updated_by", length = 255)
     private String updatedBy;
+
+    @Column(name = "is_deleted")
+    private boolean isDeleted = false;
 }

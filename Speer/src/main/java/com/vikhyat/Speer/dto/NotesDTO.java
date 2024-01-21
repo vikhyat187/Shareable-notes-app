@@ -15,12 +15,12 @@ public class NotesDTO {
 
     private Set<String> tags;
 
-    private Long createdBy;
+    private String createdBy;
 
     private Instant createdAt;
 
     private Instant lastUpdatedAt;
 
-    private Long lastUpdatedBy;
+    private String lastUpdatedBy;
 }
 

@@ -13,4 +13,6 @@ public class UserDTO {
     private Instant createdAt;
     private Instant updatedAt;
     private boolean isDeleted;
+    private String createdBy;
+    private String updatedBy;
 }

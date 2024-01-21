@@ -1,7 +1,7 @@
 package com.vikhyat.Speer.models;
 
 import jakarta.persistence.*;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,6 +9,10 @@ import java.util.Set;
 @Entity
 @Table(name = "notes")
 @NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Builder
 public class Notes extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
