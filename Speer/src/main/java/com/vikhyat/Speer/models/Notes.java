@@ -19,7 +19,7 @@ public class Notes extends BaseEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "title", nullable = false)
+    @Column(name = "title", nullable = false, unique = true)
     private String title;
 
     @Column(name = "content", columnDefinition = "text", nullable = false)

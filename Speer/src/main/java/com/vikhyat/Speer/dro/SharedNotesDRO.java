@@ -6,8 +6,8 @@ import lombok.Getter;
 
 @Builder
 @Getter
-public class ShareNotesDRO {
+public class SharedNotesDRO {
     private Long notesId;
-    private Long userId;
+    private String emailId;
     private PermissionLevel permissionLevel;
 }

@@ -1,8 +1,7 @@
 package com.vikhyat.Speer.models;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,6 +9,9 @@ import java.util.Set;
 @Entity
 @NoArgsConstructor
 @Getter
+@Setter
+@Builder
+@AllArgsConstructor
 @Table(name = "tags")
 public class Tags extends BaseEntity{
     @Id
