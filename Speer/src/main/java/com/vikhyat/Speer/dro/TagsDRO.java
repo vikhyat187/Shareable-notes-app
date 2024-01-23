@@ -11,5 +11,7 @@ import java.util.Set;
 @Getter
 public class TagsDRO {
     private String name;
+    private String createdBy;
+    private String updatedBy;
     private Set<Notes> notes = new HashSet<>();
 }
